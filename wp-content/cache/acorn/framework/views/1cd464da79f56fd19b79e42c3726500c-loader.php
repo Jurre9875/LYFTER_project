@@ -1,0 +1,2 @@
+<?= \Roots\view('partials.comments', $data ?? get_defined_vars())->render(); ?>
+<?php /**PATH /Users/admin/Local Sites/lyfter/app/public/wp-content/themes/mijn-theme/resources/views/partials/comments.blade.php ENDPATH**/ ?>
