@@ -1,0 +1,14 @@
+@import "tailwindcss" theme(static);
+@source "../../app/**/*.php";
+@source "../**/*.blade.php";
+@source "../**/*.js";
+
+@layer utilities {
+  .text-on-surface {
+    color: #111111;
+  }
+
+  .bg-gradient-pink {
+    background-image: linear-gradient(180deg, #ffe4ec 0%, #fff4f8 45%, #ffffff 100%);
+  }
+}
