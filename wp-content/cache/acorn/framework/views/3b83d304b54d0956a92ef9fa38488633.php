@@ -1,1 +1,1 @@
-<h1>TESTw</h1> <?php /**PATH /Users/admin/Local Sites/lyfter/app/public/wp-content/themes/mijn-theme/resources/views/index.blade.php ENDPATH**/ ?>
+<h1>TESTw3</h1> <?php /**PATH /Users/admin/Local Sites/lyfter/app/public/wp-content/themes/mijn-theme/resources/views/index.blade.php ENDPATH**/ ?>
