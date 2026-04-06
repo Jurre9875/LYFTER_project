@@ -15,7 +15,7 @@
   <body @php(body_class('text-on-surface antialiased overflow-x-hidden bg-gradient-pink min-h-screen'))>
     @php(wp_body_open())
 
-    <div id="app">
+    <div id="app" class="min-h-screen bg-gradient-pink">
       @include('sections.header')
 
       <main id="main" class="main pt-24 md:pt-28">

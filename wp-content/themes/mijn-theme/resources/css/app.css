@@ -9,6 +9,57 @@
   }
 
   .bg-gradient-pink {
-    background-image: linear-gradient(180deg, #ffe4ec 0%, #fff4f8 45%, #ffffff 100%);
+    background-color: rgba(255, 203, 216, 0.1);
+  }
+}
+
+@layer components {
+  .hero-line {
+    position: absolute;
+    left: -1rem;
+    top: 5.25rem;
+    width: min(84rem, 108vw);
+    max-width: none;
+    pointer-events: none;
+  }
+
+  .scene {
+    position: relative;
+    min-height: 42rem;
+  }
+
+  .scene-house-wrap {
+    position: relative;
+    margin-left: auto;
+    width: 1044px;
+    overflow: hidden;
+  }
+
+  .scene-house {
+    width: 1044px;
+    height: auto;
+    display: block;
+    max-width: none;
+    transform: translateY(5.5rem);
+  }
+
+  .scene-phone {
+    position: absolute;
+    rotate: -4.5deg;
+    bottom: -0.1rem;
+    left: -10%;
+    width: 1000px;
+    max-width: none;
+    transform: rotate(4.5deg);
+    filter: drop-shadow(0 36px 44px rgba(17, 17, 17, 0.28));
+  }
+
+  .scene-watch {
+    position: absolute;
+    bottom: 0rem;
+    left: -10%;
+    width: 797px;
+    max-width: none;
+    filter: drop-shadow(0 28px 32px rgba(17, 17, 17, 0.26));
   }
 }

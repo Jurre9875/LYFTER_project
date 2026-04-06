@@ -1,35 +1,37 @@
 
 <header class="fixed top-0 w-full z-50">
   <nav
-    class="mx-auto flex max-w-[1440px] items-center justify-center px-4 py-6 md:justify-between md:px-8"
+    class="mx-auto flex max-w-[1440px] items-center justify-between px-5 py-6 md:px-8"
   >
     <a class="flex items-center" href="/">
       <img
         alt="LYFTER"
-        class="h-5"
+        class="h-5 md:h-6"
         src="<?php echo e(Vite::asset('resources/images/LYFTER_small.png')); ?>"
       />
     </a>
 
-    <div class="hidden md:flex items-center gap-10 font-bold text-sm">
-      <a class="text-black transition-opacity hover:opacity-70 !no-underline" href="#">
+    <div class="hidden md:flex items-center gap-8 font-bold text-sm">
+      <a class="text-black !no-underline" href="#">
         Lyfter Garage
       </a>
-      <a class="text-black transition-opacity hover:opacity-70 !no-underline" href="#">
+      <a class="text-black !no-underline" href="#">
         Lyfter Doorbell
       </a>
-      <button
-        class="flex items-center gap-2 rounded-full border border-pink-100 bg-white/50 px-6 py-2.5 text-black transition-colors hover:bg-white"
+      <a
+        class="flex items-center gap-2 rounded-full border border-pink-100 bg-white/50 px-6 py-2.5 text-black !no-underline"
+        href="#"
       >
         Support
         <span class="material-symbols-outlined text-base">chat_bubble</span>
-      </button>
-      <button
-        class="flex items-center gap-2 rounded-full bg-black px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-black/10 transition-opacity hover:opacity-90"
+      </a>
+      <a
+        class="flex items-center gap-2 rounded-full bg-black px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-black/10 !no-underline"
+        href="#"
       >
         Download the app
         <span class="material-symbols-outlined text-base">download</span>
-      </button>
+      </a>
     </div>
   </nav>
 </header>
