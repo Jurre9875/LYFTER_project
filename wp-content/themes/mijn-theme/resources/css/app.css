@@ -3,6 +3,10 @@
 @source "../**/*.blade.php";
 @source "../**/*.js";
 
+body {
+  font-family: 'Gabarito', sans-serif;
+}
+
 @layer utilities {
   .text-on-surface {
     color: #111111;
@@ -32,7 +36,6 @@
     position: relative;
     margin-left: auto;
     width: 1044px;
-    overflow: hidden;
   }
 
   .scene-house {
@@ -45,21 +48,76 @@
 
   .scene-phone {
     position: absolute;
-    rotate: -4.5deg;
-    bottom: -0.1rem;
-    left: -10%;
+    bottom: -6rem;
+    left: 10%;
     width: 1000px;
     max-width: none;
-    transform: rotate(4.5deg);
+    transform: translateX(-10%) rotate(4.5deg);
     filter: drop-shadow(0 36px 44px rgba(17, 17, 17, 0.28));
   }
 
   .scene-watch {
     position: absolute;
-    bottom: 0rem;
-    left: -10%;
+    bottom: -6rem;
+    left: 0%;
     width: 797px;
     max-width: none;
+    transform: translateX(0);
     filter: drop-shadow(0 28px 32px rgba(17, 17, 17, 0.26));
+  }
+
+  .cards-grid {
+    padding-top: 1rem;
+    max-width: 1380px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    border: 1px solid rgba(17, 17, 17, 0.08);
+    border-radius: 1.1rem;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 22px 48px rgba(17, 17, 17, 0.08);
+  }
+
+  .card-head {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .card-icon {
+    width: 4.375rem;
+    height: 4.375rem;
+    object-fit: contain;
+    opacity: 1;
+  }
+
+  .card-arrow {
+    width: 0.625rem;
+    height: 1.125rem;
+    object-fit: contain;
+    opacity: 0.9;
+  }
+
+  .card-title {
+    margin-top: 2.5rem;
+    color: #111111;
+    font-size: 1.45rem;
+    line-height: 1.15;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .card-text {
+    margin-top: 1rem;
+    color: rgba(17, 17, 17, 0.64);
+    font-size: 0.98rem;
+    line-height: 1.8;
+    font-weight: 500;
+    max-width: 21.5rem;
   }
 }
