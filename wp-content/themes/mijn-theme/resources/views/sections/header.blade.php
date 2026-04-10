@@ -12,25 +12,25 @@
     </a>
 
     <div class="hidden md:flex items-center gap-8 font-bold text-sm">
-      <a class="text-black !no-underline" href="#">
+      <a class="header-nav-link text-black !no-underline" href="#">
         Lyfter Garage
       </a>
-      <a class="text-black !no-underline" href="#">
+      <a class="header-nav-link text-black !no-underline" href="#">
         Lyfter Doorbell
       </a>
       <a
-        class="flex items-center gap-2 rounded-full border border-pink-100 bg-white/50 px-6 py-2.5 text-black !no-underline"
+        class="site-button site-button--light flex items-center gap-2 rounded-full border border-pink-100 bg-white/50 px-6 py-2.5 text-black !no-underline"
         href="#"
       >
-        Support
-        <span class="material-symbols-outlined text-base">chat_bubble</span>
+        <span>Support</span>
+        <span class="material-symbols-outlined relative z-[1] text-base">chat_bubble</span>
       </a>
       <a
-        class="flex items-center gap-2 rounded-full bg-black px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-black/10 !no-underline"
+        class="site-button site-button--dark flex items-center gap-2 rounded-full bg-black px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-black/10 !no-underline"
         href="#"
       >
-        Download the app
-        <span class="material-symbols-outlined text-base">download</span>
+        <span>Download the app</span>
+        <span class="material-symbols-outlined relative z-[1] text-base">download</span>
       </a>
     </div>
   </nav>

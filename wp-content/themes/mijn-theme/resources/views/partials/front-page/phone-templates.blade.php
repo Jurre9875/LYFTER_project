@@ -31,24 +31,16 @@
           </p>
 
           <div class="phone-templates-actions">
-            <a class="phone-templates-button phone-templates-button--mint" href="#">
+            <a class="site-button site-button--mint phone-templates-button" href="#">
               <span>Button</span>
               <span aria-hidden="true" class="phone-templates-button-icon">
-                <svg fill="none" viewBox="0 0 26 21" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.25 9.9375L13 1.25L24.75 9.9375V18.8125C24.75 19.4341 24.5031 20.0302 24.0636 20.4698C23.624 20.9093 23.0279 21.1562 22.4062 21.1562H3.59375C2.97215 21.1562 2.37601 20.9093 1.93646 20.4698C1.49693 20.0302 1.25 19.4341 1.25 18.8125V9.9375Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                  <path d="M8.875 21.1562V11.9062H17.125V21.1562" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                  <path d="M10.625 6.34375H15.375" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
-                </svg>
+                <img alt="" src="{{ Vite::asset('resources/images/icons/huisje_slot.png') }}">
               </span>
             </a>
-            <a class="phone-templates-button phone-templates-button--dark" href="#">
+            <a class="site-button site-button--dark phone-templates-button" href="#">
               <span>Button</span>
               <span aria-hidden="true" class="phone-templates-button-icon">
-                <svg fill="none" viewBox="0 0 26 21" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.25 9.9375L13 1.25L24.75 9.9375V18.8125C24.75 19.4341 24.5031 20.0302 24.0636 20.4698C23.624 20.9093 23.0279 21.1562 22.4062 21.1562H3.59375C2.97215 21.1562 2.37601 20.9093 1.93646 20.4698C1.49693 20.0302 1.25 19.4341 1.25 18.8125V9.9375Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                  <path d="M8.875 21.1562V11.9062H17.125V21.1562" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                  <path d="M10.625 6.34375H15.375" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
-                </svg>
+                <img alt="" src="{{ Vite::asset('resources/images/icons/huisje_slot.png') }}">
               </span>
             </a>
           </div>

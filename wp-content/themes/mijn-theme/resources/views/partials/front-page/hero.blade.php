@@ -26,13 +26,13 @@
         </p>
 
         <div class="mt-8 flex flex-wrap gap-4">
-          <a class="inline-flex items-center justify-center gap-[0.7rem] rounded-full bg-[#18d7c3] px-6 py-4 text-base font-extrabold text-white shadow-[0_14px_30px_rgba(24,215,195,0.24)] !no-underline" href="#">
-            Buy Lyfter garage
-            <span class="material-symbols-outlined text-[20px]">north_east</span>
+          <a class="site-button site-button--mint inline-flex items-center justify-center gap-[0.7rem] rounded-full px-6 py-4 text-base font-extrabold text-white !no-underline" href="#">
+            <span>Buy Lyfter garage</span>
+            <span class="material-symbols-outlined relative z-[1] text-[20px]">north_east</span>
           </a>
-          <a class="inline-flex items-center justify-center gap-[0.7rem] rounded-full bg-[#060606] px-6 py-4 text-base font-extrabold text-white shadow-[0_14px_30px_rgba(6,6,6,0.22)] !no-underline" href="#">
-            Download the app
-            <span class="material-symbols-outlined text-[20px]">download</span>
+          <a class="site-button site-button--dark inline-flex items-center justify-center gap-[0.7rem] rounded-full px-6 py-4 text-base font-extrabold text-white !no-underline" href="#">
+            <span>Download the app</span>
+            <span class="material-symbols-outlined relative z-[1] text-[20px]">download</span>
           </a>
         </div>
       </div>

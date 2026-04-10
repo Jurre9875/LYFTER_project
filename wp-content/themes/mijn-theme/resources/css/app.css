@@ -18,6 +18,115 @@ body {
 }
 
 @layer components {
+  .header-nav-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 0.2rem;
+    transition: color 220ms ease;
+  }
+
+  .header-nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.15rem;
+    width: 100%;
+    height: 2px;
+    border-radius: 999px;
+    background: #e53935;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .header-nav-link:hover::after,
+  .header-nav-link:focus-visible::after {
+    transform: scaleX(1);
+  }
+
+  .site-button {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    transition:
+      color 320ms ease,
+      transform 200ms ease,
+      box-shadow 240ms ease,
+      border-color 320ms ease;
+  }
+
+  .site-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: #ffffff;
+    transform: scaleY(0);
+    transform-origin: center bottom;
+    transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .site-button > span,
+  .site-button > img {
+    position: relative;
+    z-index: 1;
+  }
+
+  .site-button:hover,
+  .site-button:focus-visible {
+    transform: translateY(-1px);
+  }
+
+  .site-button:hover::before,
+  .site-button:focus-visible::before {
+    transform: scaleY(1);
+  }
+
+  .site-button--light {
+    border-color: rgba(233, 213, 223, 0.9);
+  }
+
+  .site-button--mint {
+    background: rgba(0, 209, 178, 1);
+    color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0, 209, 178, 0.28);
+    border: 1px solid transparent;
+  }
+
+  .site-button--dark {
+    background: #060606;
+    color: #ffffff;
+    box-shadow: 0 14px 28px rgba(6, 6, 6, 0.2);
+    border: 1px solid transparent;
+  }
+
+  .site-button--mint:hover,
+  .site-button--mint:focus-visible,
+  .site-button--dark:hover,
+  .site-button--dark:focus-visible,
+  .site-button--light:hover,
+  .site-button--light:focus-visible {
+    border-color: rgba(17, 17, 17, 0.08);
+  }
+
+  .site-button--mint > span,
+  .site-button--dark > span {
+    color: #ffffff;
+    text-shadow:
+      0 0 1px rgba(6, 6, 6, 0.95),
+      0 1px 2px rgba(6, 6, 6, 0.42);
+  }
+
+  .site-button--light > span {
+    color: #060606;
+  }
+
+  .site-button:focus-visible,
+  .header-nav-link:focus-visible {
+    outline: none;
+  }
+
   .hero-line {
     position: absolute;
     left: -1rem;
@@ -189,37 +298,32 @@ body {
     line-height: 1;
     font-weight: 800;
     text-decoration: none !important;
-    transition: transform 180ms ease, box-shadow 180ms ease;
-  }
-
-  .phone-templates-button:hover {
-    transform: translateY(-1px);
-  }
-
-  .phone-templates-button--mint {
-    background: #63d8c8;
-    color: #fff;
-    box-shadow: 0 14px 28px rgba(99, 216, 200, 0.28);
-  }
-
-  .phone-templates-button--dark {
-    background: #060606;
-    color: #fff;
-    box-shadow: 0 14px 28px rgba(6, 6, 6, 0.2);
   }
 
   .phone-templates-button-icon {
     display: inline-flex;
-    width: 1.35rem;
-    height: 1.1rem;
+    width: 1.45rem;
+    height: 1.2rem;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
   }
 
+  .phone-templates-button-icon img,
   .phone-templates-button-icon svg {
+    display: block;
     width: 100%;
     height: 100%;
+    object-fit: contain;
+    transition: filter 320ms ease, opacity 320ms ease, transform 320ms ease;
+  }
+
+  .site-button--mint .phone-templates-button-icon img,
+  .site-button--dark .phone-templates-button-icon img {
+    filter:
+      brightness(0) invert(1)
+      drop-shadow(0 0 1px rgba(6, 6, 6, 0.95))
+      drop-shadow(0 1px 2px rgba(6, 6, 6, 0.42));
   }
 
   .phone-templates-visual-wrap {
